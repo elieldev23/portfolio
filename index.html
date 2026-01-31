@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eliel Beonao — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <header class="top">
+    <div class="container top-inner">
+      <div class="brand">Portfolio</div>
+
+      <nav class="nav">
+        <a href="#home" class="active">home</a>
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+
+        <a class="btn btn-small primary" href="assets/cv.pdf" download>
+          download cv
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <!-- LEFT: visual (placeholder for photo) -->
+        <div class="hero-left">
+          <div class="orb">
+            <div class="orb-glow"></div>
+            <div class="orb-ring"></div>
+
+            <!-- Placeholder block (replace later with your image) -->
+            <img
+            class="avatar-img"
+            src="assets/portrait.png"
+            alt="Eliel Beonao portrait"
+            />
+          </div>
+        </div>
+
+        <!-- RIGHT: content -->
+        <div class="hero-right">
+          <p class="kicker">Hello, I’m</p>
+
+          <h1 class="hero-title">
+            Eliel Beonao
+          </h1>
+
+          <h2 class="hero-subtitle">
+            And I’m a <span class="accent">Computer Scientist</span>.
+          </h2>
+
+          <p class="hero-text">
+            I build web, security, and AI projects with a focus on clear UI, solid engineering, and strong documentation.
+          </p>
+
+          <div class="social">
+            <a class="icon" href="#" aria-label="GitHub">GH</a>
+            <a class="icon" href="#" aria-label="LinkedIn">in</a>
+            <a class="icon" href="#" aria-label="Email">@</a>
+          </div>
+
+          <div class="actions">
+            <a class="btn primary" href="#projects">my projects</a>
+            <a class="btn ghost" href="#contact">contact</a>
+          </div>
+
+          <div class="quick">
+            <span class="pill">Ottawa, Canada</span>
+            <span class="pill">Open to internships</span>
+            <span class="pill">Web • Security • AI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container section-head">
+        <h2 class="section-title">// my projects</h2>
+      </div>
+
+      <div class="container list">
+        <a class="row" href="https://github.com/elieldev23/secure_login_flask" target="_blank" rel="noreferrer">
+        <span class="idx">01</span>
+        <div class="row-main">
+            <h3>Secure Login System (Flask)</h3>
+            <p>Authentication, password hashing, sessions, and clean code structure.</p>
+        </div>
+        <span class="arrow">→</span>
+        </a>
+
+        <a class="row" href="https://github.com/elieldev23/spam-detector" target="_blank" rel="noreferrer">
+        <span class="idx">02</span>
+        <div class="row-main">
+            <h3>Spam Detector (Machine Learning)</h3>
+            <p>SMS spam classification with preprocessing, training, and evaluation metrics.</p>
+        </div>
+        <span class="arrow">→</span>
+        </a>
+
+        <a class="row" href="https://github.com/elieldev23/password-generator" target="_blank" rel="noreferrer">
+        <span class="idx">03</span>
+        <div class="row-main">
+            <h3>Password Generator (Python GUI)</h3>
+            <p>Cross-platform desktop app to generate strong passwords with quick copy.</p>
+        </div>
+        <span class="arrow">→</span>
+        </a>
+
+        <a class="row" href="https://github.com/elieldev23/snake-pygame" target="_blank" rel="noreferrer">
+        <span class="idx">04</span>
+        <div class="row-main">
+            <h3>Snake Game (Pygame)</h3>
+            <p>Classic Snake with smooth input, collision logic, and score tracking.</p>
+        </div>
+        <span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+    <div class="container section-head">
+        <h2 class="section-title">// about</h2>
+        <p class="muted">Who I am and how I build.</p>
+    </div>
+
+    <div class="container about-grid">
+        <div class="about-card">
+        <h3>Hi — I’m Eliel Beonao.</h3>
+        <p class="muted">
+            I’m a Computer Science student based in Montreal. I build projects at the intersection of
+            <strong>web development</strong>, <strong>security</strong>, and <strong>AI</strong>.
+        </p>
+        <p class="muted">
+            I care about clean UI, readable code, and building systems that are easy to maintain.
+            I like working with structure: define the problem, implement a solution, test it, and document it.
+        </p>
+
+        <div class="about-tags">
+            <span class="pill">Problem-solving</span>
+            <span class="pill">Clean code</span>
+            <span class="pill">Documentation</span>
+            <span class="pill">Iteration</span>
+        </div>
+        </div>
+
+        <div class="about-card">
+        <h3>What I’m looking for</h3>
+        <p class="muted">
+            I’m currently looking for <strong>internships / junior roles</strong> where I can contribute to real products,
+            learn from strong teams, and grow my engineering skills.
+        </p>
+
+        <div class="about-mini">
+            <div class="mini">
+            <p class="mini-k">Location</p>
+            <p class="mini-v">Montreal, Canada</p>
+            </div>
+            <div class="mini">
+            <p class="mini-k">Focus</p>
+            <p class="mini-v">Web • Security • AI</p>
+            </div>
+            <div class="mini">
+            <p class="mini-k">Availability</p>
+            <p class="mini-v">Open to internships</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+    <div class="container section-head">
+        <h2 class="section-title">// skills</h2>
+        <p class="muted">Tools I use to build and ship projects.</p>
+    </div>
+
+    <div class="container skills-grid-pro">
+        <div class="skill">
+        <h3>Languages</h3>
+        <p class="muted">Python • Java • C++ • JavaScript</p>
+        <div class="chips">
+            <span class="chip">Python</span>
+            <span class="chip">Java</span>
+            <span class="chip">C++</span>
+            <span class="chip">JavaScript</span>
+        </div>
+        </div>
+
+        <div class="skill">
+        <h3>Web</h3>
+        <p class="muted">HTML • CSS • UI/UX fundamentals • REST basics</p>
+        <div class="chips">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">REST</span>
+            <span class="chip">UI/UX</span>
+        </div>
+        </div>
+
+        <div class="skill">
+        <h3>Security</h3>
+        <p class="muted">Auth fundamentals • Hashing • Secure patterns</p>
+        <div class="chips">
+            <span class="chip">Auth</span>
+            <span class="chip">Hashing</span>
+            <span class="chip">Sessions</span>
+            <span class="chip">Best practices</span>
+        </div>
+        </div>
+
+        <div class="skill">
+        <h3>ML / Data</h3>
+        <p class="muted">Preprocessing • Training • Evaluation metrics</p>
+        <div class="chips">
+            <span class="chip">Data prep</span>
+            <span class="chip">Training</span>
+            <span class="chip">Evaluation</span>
+            <span class="chip">Text classification</span>
+        </div>
+        </div>
+
+        <div class="skill">
+        <h3>Tools</h3>
+        <p class="muted">Git/GitHub • VS Code • Terminal • Debugging</p>
+        <div class="chips">
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">Debugging</span>
+        </div>
+        </div>
+
+        <div class="skill">
+        <h3>Strengths</h3>
+        <p class="muted">Clean code • Documentation • Iteration • Delivery</p>
+        <div class="chips">
+            <span class="chip">Clean code</span>
+            <span class="chip">Docs</span>
+            <span class="chip">Iteration</span>
+            <span class="chip">Delivery</span>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="section">
+    <div class="container section-head">
+        <h2 class="section-title">// contact</h2>
+        <p class="muted">Let’s connect.</p>
+    </div>
+
+    <div class="container">
+        <div class="contact-card">
+        <h3>Reach me</h3>
+
+        <p class="muted">
+            Email is the fastest way to reach me.  
+            I usually reply within 24–48 hours.
+        </p>
+
+        <div class="contact-lines">
+            <div class="cline">
+            <span class="ck">Email</span>
+            <a class="link" href="mailto:elielbeonao@gmail.com">
+                elielbeonao@gmail.com
+            </a>
+            </div>
+
+            <div class="cline">
+            <span class="ck">GitHub</span>
+            <a class="link" href="https://github.com/elieldev23" target="_blank">
+                github.com/elieldev23
+            </a>
+            </div>
+
+            <div class="cline">
+            <span class="ck">LinkedIn</span>
+            <a class="link" href="linkedin.html">
+                Not created yet
+            </a>
+            </div>
+
+            <div class="cline">
+            <span class="ck">Location</span>
+            <span class="muted">Ottawa, Canada</span>
+            </div>
+        </div>
+
+        <div class="actions" style="margin-top:18px;">
+            <a class="btn primary" href="mailto:elielbeonao@gmail.com">
+            email me
+            </a>
+            <a class="btn ghost" href="assets/cv.pdf" download>
+            download cv
+            </a>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+    <footer class="foot">
+      <div class="container">
+        <p class="muted">© <span id="y"></span> Eliel Beonao</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
